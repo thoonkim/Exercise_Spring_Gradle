@@ -1,0 +1,1 @@
+springbootDevtools라이브러리를 추가하면, html파일을 컴파일만 해주면 서버 재시작 없이 view 파일이 변경 가능하다.

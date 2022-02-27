@@ -1,0 +1,1 @@
+1. retrun으로 객체를 반환하고 위에 @ResponseBody 가 붙어있다면 JSON 형태로 반환한 것!

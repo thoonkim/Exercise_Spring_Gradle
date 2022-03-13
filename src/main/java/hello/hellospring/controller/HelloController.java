@@ -15,7 +15,7 @@ public class HelloController {
     @GetMapping("hello")
     public String hello(Model model){
         model.addAttribute("data", "hello!!");
-        return "hello";//이 리턴 값은 뷰리졸버가 templates의 리턴값과같은이름ㅈ.html에 자동 화면을 찾아 처리한다.
+        return "hello";//이 리턴 값은 뷰리졸버가 templates의 리턴값과같은이름.html에 자동 화면을 찾아 처리한다.
     }
 
 
@@ -28,7 +28,7 @@ public class HelloController {
     }
     /*API 방식 1*/
     @GetMapping("hello-string")
-    @ResponseBody //html이 아닌 http의 바디부에 이 데이터를 직접 넣어 주겠다는 것
+    @ResponseBody //html이 아닌 http의 바디에 이 데이터를 직접 넣어 주겠다는 것
     public String helloString(@RequestParam("name") String name) {
         return "hello " + name; //위의 name에 spring으로 바꾸면 이 리턴이 hello spring으로 바뀐다.
         //이 방식과 템플릿 엔진과의 방식의 차이는 뷰 같은 것이 없고 이 문자 자체가 그대로 리턴된다.
